@@ -1,0 +1,10 @@
+<?php
+
+/** @var $productId int */
+/** @var \Magento\Framework\View\Element\Template $block */
+/** @var \YireoTraining\ExampleLayoutChallenges\ViewModel\Product $productViewModel */
+$productViewModel = $block->getProductViewModel();
+$productId = $block->getProductId();
+$product = $productViewModel->setByProductId($productId)->getProduct();
+?>
+<h1>Product "<?= $product->getName() ?>"</h1>
