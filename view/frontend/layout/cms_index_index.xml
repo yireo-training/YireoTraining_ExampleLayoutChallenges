@@ -4,7 +4,7 @@
     <body>
         <referenceContainer name="content">
             <container name="layout_challenges">
-                <block template="YireoTraining_ExampleLayoutChalleges::helloWorld.phtml"/>
+                <block template="YireoTraining_ExampleLayoutChallenges::helloWorld.phtml"/>
             </container>
         </referenceContainer>
     </body>
