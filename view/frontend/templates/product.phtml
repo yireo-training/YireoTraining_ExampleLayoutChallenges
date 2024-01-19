@@ -5,7 +5,7 @@ declare(strict_types=1);
 /** @var \Magento\Framework\View\Element\Template $block */
 /** @var \YireoTraining\ExampleLayoutChallenges\ViewModel\Product $productViewModel */
 $productViewModel = $block->getProductViewModel(); // getData('product_view_model')
-$productId = $block->getProductId(); // getData('product_id')
+$productId = (int)$block->getProductId(); // getData('product_id')
 $product = $productViewModel->setByProductId($productId)->getProduct();
 ?>
 <h1>Product "<?= $product->getName() ?>"</h1>
